@@ -10,4 +10,9 @@
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="call prebuild.bat" />
   </Target>
+
+  <Target Name="PostBuild" BeforeTargets="PostBuildEvent">
+    <Exec Command="call postbuild.bat" />
+  </Target>
+
 </Project>
